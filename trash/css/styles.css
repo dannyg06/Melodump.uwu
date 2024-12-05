@@ -167,6 +167,22 @@ img, .container-fluid {
     text-align: justify;
   }
 
+  
+  table {
+    width: 100%;
+    background-color: #f6f6f646;
+    }
+    
+    th, td {
+    border: 2px solid #af0a0a;
+    padding: 10px;
+    text-align: left;
+    }
+    
+    th {
+    background-color:#bd0404;
+    }
+
 /*tablet css*/
 
 @media (max-width: 768px) {
