@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Share:ital,wght@0,400;0,700;1,400;1,700&family=Underdog&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Be:SUR</title>
+</head>
+
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg fill="#FFFFFF" width="26px" height="26px" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.383 13.644A1.03 1.03 0 0 1 9.928 15.1L6 11.172 2.072 15.1a1.03 1.03 0 1 1-1.455-1.456l3.928-3.928L.617 5.79a1.03 1.03 0 1 1 1.455-1.456L6 8.261l3.928-3.928a1.03 1.03 0 0 1 1.455 1.456L7.455 9.716z"/></svg></a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="contact.html">contact</a></li>
+
+        </ul>
+
+        <ul>
+            <li><a href="index.html">BE:LOW SURFACE</a></li>
+            <li class="hideOnMobile"><a href="index.html">home</a></li>
+            <li class="hideOnMobile"><a href="about.html">about</a></li>
+            <li class="hideOnMobile"><a href="projects.html">projects</a></li>
+            <li class="hideOnMobile"><a href="contact.html">contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z" fill="#FFFFFF"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <header>
+        <h1>Be:SUR</h1>
+        <h2>Be:LOW SURface</h2>
+    </header>
+
+    <main>
+        <section class="content">
+            <h3>Be:LOW SURface</h3>
+            <p>Be:LOW SURface is a project that explores the relationship between the surface and the space below it. It aims to create a dialogue between the two, revealing the hidden layers of meaning and experience that lie beneath the surface.</p>
+            <p>Enter a realm where the familiar is distorted, and the ordinary becomes unsettling. Below Surface, the industrial landscape is reimagined as a dreamscape of twisted geometry and fractured perspectives. Concrete and steel give way to hallucinatory visions, as the boundaries of reality are stretched and manipulated. In this world, the surreal and the experimental reign supreme, where the laws of physics are bent and broken. Explore the depths of this strange new world, where the impossible becomes possible.</p>
+        </section>
+</body>
+</html>
