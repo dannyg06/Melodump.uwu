@@ -38,6 +38,7 @@ main {
     position: fixed;
     background-color: var(--bg-primary);
     transition: 200ms ease;
+    background-color: #FEFAE0;
 }
 
 .navbar-nav {
@@ -53,6 +54,7 @@ main {
     width: 100%;
 }
 
+/*idk*/
 .nav-item:last-child {
     margin-top: auto;
 }
@@ -83,6 +85,14 @@ main {
 
 .navbar:hover .link-text {
     display: block;
+}
+
+.fa-primary {
+    color: darkgreen;
+}
+
+.fa-secondary{
+    color:yellowgreen
 }
 
 .fa-primary, .fa-secondary {
