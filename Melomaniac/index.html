@@ -1,121 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap</title>
+    <title>Melomaniac</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="container">
-
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Clever Angler</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Media!!!!
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="media.html">Media!!!!</a></li>
-                  <li><a class="dropdown-item" href="https://www.youtube.com/@y3wew">Inspo</a></li>
-                </ul>
-              </li>
-            </ul><button class="btn btn-outline-warning rounded-0 d-block" type="button" onclick="location.href='about.html'">Buy Now</button>
-          </div>
-        </div>
-      </nav>
-      </div>
-
-        <div id= "header_img" class="bg-light rounded-0">
-          <div class="container-fluid py-4">
-            <img id= "header" class="d-block mx-auto" src="images/cleverangler.png" alt="banner">
-            <button class="btn btn-warning rounded-0 mx-auto d-block mt-3"  type="button" onclick="location.href='about.html'">About Us</button>
-          </div>
-        </div>
+   <nav>
 
 
-        <hr>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <h2 class="text-center">Matcha Dreams</h2>
-            <img class="img-fluid my-3 rounded-4" src="images/matcha.jpg" alt="banner">
-            <p>Escape to a world of serenity with Success Matcha. Our artisanal blends, expertly brewed coffee, and soothing ambiance invite you to unwind and rediscover tranquility.</p>
-          </div>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg fill="#FFFFFF" width="26px" height="26px" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.383 13.644A1.03 1.03 0 0 1 9.928 15.1L6 11.172 2.072 15.1a1.03 1.03 0 1 1-1.455-1.456l3.928-3.928L.617 5.79a1.03 1.03 0 1 1 1.455-1.456L6 8.261l3.928-3.928a1.03 1.03 0 0 1 1.455 1.456L7.455 9.716z"/></svg></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-          <div class="col-md-6 col-lg-4">
-            <h2 class="text-center">Boba Goals</h2>
-            <img class="img-fluid my-3 rounded-4" src="images/bobba.jpg" alt="banner">
-            <p>Bubble up to success with Boba Goals! Sip, savor, and crush your aspirations with every delicious, refreshing drink. Including various flavors infused with victory and tastiness.</p>
-          </div>
-          
-          <div class="col-lg-4">
-            <h2 class="text-center">Ramune Coup</h2>
-            <img class="img-fluid my-3 rounded-4" src="images/ramune.jpg" alt="">
-            <p>Experience the effervescent revolution with Ramune Coup! Savor Japan's iconic Ramune soda, reimagined in vibrant flavors and refreshing twists. Indulge in fizzy delights, coupled with exclusive merchandise and immersive experiences.</p>
-          </div>
-        </div>
+
+    <ul>
+        <li><a href="index.html">Melomaniac</a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="bio.html">Bio</a></li>
+        <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z" fill="#FFFFFF"/></svg></a></li>
+    </ul>
+
+   </nav>
+
+<script> 
+
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex'
+}
+
+function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none'
+    }
+</script>
 
 
 
-          <hr>
-          <div class="row">
-          </div>
-          <hr>
-          <div id= "Welcome" class="p-5 mb-4 bg-light rounded-0">
-            <div class="opacity-75">
-            <div id="panel_bg" class="container-fluid py-5 bg-dark-subtle bg-opacity-25 rounded-3">
-              <h3>Welcome to Clever Angler</h3>
-              <p>Hi, we're Danny, Melon, and jack, founders of Clever Angler. Passionate matcha enthusiasts, we aimed to create a haven for like-minded individuals. Dedicated to helping you thrive. Our artisanal matcha and coffee inspire productivity, calmness and confidence. Hoping to foster a productive yet relaxful ambiance for students. Click here for more information about us</p>
-              <button class="btn btn-warning rounded-0 mx-auto d-block mt-3" type="button" onclick="location.href='about.html'">About Us</button>
-            </div>
-        </div>
-          </div>
-          <hr>
-          <div id= "bye" class="p-5 mb-4 bg-light rounded-3">
-            <div class="opacity-75">
-            <div id="panel_bg2" class="container-fluid py-5 bg-dark-subtle bg-light-25 rounded 3">
-              <h3>Media!!!!</h3>
-              <p>Excel, but don't forget to enjoy! Students thrive when productivity meets playfulness, cultivating resilience, connections and lifelong lessons. Click here for some randomness, tv shows, music, and much more.</p>
-              <button class="btn btn-warning rounded-0 mx-auto d-block mt-3" type="button" onclick="location.href='media.html'">Media!!!!</button>
-            </div>
-        </div>
-          </div>
-          <hr>
-          <div id="yes"></div>
-          <div class="row">
-            <div class="col-lg-12 py-5 text-center">
-              &copy;2024 Clever Angler. All rights reserved 2024
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-lg-12 py-5 text-center">
-    
-                <i class="fa-brands fa-facebook fs-3"></i>
-                <i class="fa-brands fa-instagram fs-3"></i>
-                <i class="fa-brands fa-youtube fs-3"></i>
-              </div>
-          </div>
-        </div>
-    
-  
+    <main>
+        <h1>Welcome to my Portfolio: I’m Danny Gomez, your host, showcasing my work and passions</h1>
+        <p class="first">"Welcome to my portfolio! I'm Danny Gomez a Web Design student with a passion for the arts, and well, web design as well. This site showcases my work and experiences in the web design field. Take a look around to see what I've been working on."
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ab nihil eos aliquid, vero sed consequatur quidem deleniti veritatis ex atque, accusantium recusandae, iure distinctio veniam placeat est eum esse. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolorum natus quod nesciunt inventore deleniti laborum dignissimos quidem labore, voluptates maxime cum repudiandae modi! Magnam, officia. Quod sit nemo alias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorum labore, molestias quasi ab fugiat unde in voluptates reprehenderit quod voluptatibus nostrum quae, tenetur voluptatum optio vero odio! Dolores, aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores tempore at culpa voluptatum dignissimos nihil. Asperiores libero et officiis ut pariatur corrupti, corporis eos nam temporibus itaque repellat sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, laborum facere. Eius cumque hic sint nisi natus asperiores blanditiis expedita maxime quod exercitationem sed, illo fuga ex necessitatibus possimus reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus eaque atque rerum veniam, totam enim incidunt dolore. A inventore eius maxime ratione dignissimos dolor animi quod unde perspiciatis alias?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam illum alias fuga quidem quasi obcaecati numquam doloremque, harum odit minima omnis velit architecto repellendus nesciunt hic veritatis maxime nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo corporis quas, expedita dolore saepe explicabo. Laboriosam natus obcaecati pariatur dolores eaque placeat dolor fuga, voluptas quidem inventore, voluptatum ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cupiditate laborum numquam quis nihil esse sed iusto inventore aspernatur, dolorem expedita beatae repellat repellendus quos accusamus neque animi vitae mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repudiandae vel saepe aliquid quas, iste nobis aperiam melomaniac nam eum ex commodi quaerat voluptates ratione, enim maiores consequatur soluta sapiente voluptas?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis fuga iure ipsum quisquam corporis delectus voluptates vero architecto fugit eius vitae veritatis voluptatem numquam officiis ipsa omnis, ullam aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta perspiciatis doloremque laborum rem! Similique, dolore asperiores expedita voluptas minima consequuntur sapiente. Voluptate delectus labore deleniti in soluta perferendis? Eos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia consequatur, dolorum cupiditate autem quam repellat earum rem ut libero architecto minima amet quidem ea, aut debitis fuga explicabo. Asperiores, sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, consectetur sint? In natus sapiente quis mollitia? Iusto, temporibus dolor! Cumque itaque optio eius, qui nostrum quae reiciendis sapiente magnam omnis.</p>
+    </main>
 </body>
 </html>
