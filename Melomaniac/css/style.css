@@ -5,7 +5,6 @@
 :root {
     font-size: 16px;
     font-family: "Share", sans-serif;
-    margin-right: 0;
 }
 
 body {
@@ -97,6 +96,7 @@ nav li:first-child{
 
 .first {
     font-size: 20px;
+    text-align: center;
 }
 
 
@@ -126,10 +126,70 @@ h1{
     box-shadow: 2px 4px 4px 2px #00000071;
   }
 
+  .button1{
+    background-color: yellowgreen; 
+    color: darkgreen; 
+    border-radius: 2px;
+    padding: 10px 40px 10px 40px;
+    margin: 0px 20px 0px 20px;
+    border: none;
+    max-width: 100%; 
+    text-decoration: none;
+    box-shadow: 2px 4px 4px 2px #00000071;
+  }
+
   .button:hover{
     background-color: yellowgreen;
     color: darkgreen;
     border: 2px solid darkgreen;
+  }
+
+  
+  .button1:hover{
+    background-color: #FEFAE0;
+    color: darkgreen;
+    border: 2px solid darkgreen;
+  }
+
+
+  .button1 img {
+    margin-right: 8px;
+  }
+
+  .button-center a::before{
+    content: attr(data-social);
+    position: absolute;
+    background-color: darkgreen;
+    color: yellowgreen;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-30px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms;
+  }
+
+  .button-center a:hover::before{
+    transform: translateY(-65px) rotate(0);
+    opacity: 1;
+  }
+
+  .button-center a:hover::after{
+    transform: translateY(-42px) rotate(0);
+    opacity: 1;
+  }
+
+  .button-center a::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid rgb(rgb(0, 0, 0), rgb(0, 0, 0), blue);
+    transform: translateY(0) rotate(25deg);
+    transition: 200ms;
   }
 
   #h1{
@@ -275,10 +335,66 @@ h1{
 }
 
 
+#socials{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.button-center{
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    
+}
 
 
+footer {
+    background-color: yellowgreen;
+    color: darkgreen;
+    width: 100%; 
+    text-align: center;
+    padding: 2px;
+}
+
+.footer{
+    
+    margin-top: 220px;
+}
+
+.footer1{
+    
+    margin-top: 50px;
+}
+
+.logo{
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    border: 2px dotted yellowgreen;
+}
+ 
+#logo{
+    text-align: center;
+    justify-items: center;
+    margin-top: 30px;
+}
 
 
+.logo2{
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    border: 2px dotted yellowgreen;
+}
+ 
+#logo2{
+    text-align: center;
+    justify-items: center;
+    margin-top: 30px;
+}
 
 
 
@@ -294,6 +410,21 @@ h1{
         transition: opacity var(--transition-speed);
     }
 
+    .button-center {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .footer {
+
+        margin-top: 390px;
+    }
+
+    .footer1{
+        margin-top: 240px;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -304,6 +435,7 @@ h1{
     .menu-button {
         display: block;
     }
+
 }
 
 @media (max-width: 400px) {
@@ -311,3 +443,4 @@ h1{
         width: 100%;
     }
 }
+
