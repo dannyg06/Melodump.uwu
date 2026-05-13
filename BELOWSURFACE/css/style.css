@@ -52,7 +52,7 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: linear-gradient(to right, #0d4d11, #07c09b, #0000ff);
+    color: rgb(0, 195, 255);
 }
 
 nav a:hover{
@@ -70,7 +70,7 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(72, 2, 104, 0.517);
+    background-color: rgba(25, 0, 255, 0.411);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px goldenrod;
     display: none;
