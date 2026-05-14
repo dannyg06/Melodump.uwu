@@ -9,6 +9,20 @@
 
 }
 
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+
+}
+
 .banner{
     margin: 2%;
     margin-top: 0.5%;
@@ -54,7 +68,7 @@ nav li a {
 }
 
 nav li :hover{
-    color: chartreuse;
+    color: #adb5bd;
 }
 
 h1{
@@ -112,6 +126,13 @@ main{
     padding: 10px;
 }
 
+aside{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.353);
+    border-radius: 5px;
+}
+
 p{
     margin: 20px;
     text-align: justify;
@@ -147,10 +168,9 @@ p{
 }
 
 #bottom{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
-    gap: 1em;
     
 }
 
@@ -218,6 +238,12 @@ img {
   }
 
 
+iframe{
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
 footer{
     text-align: center;
     padding: 10px;
@@ -228,4 +254,21 @@ footer{
 }
 
 
-/*text align, color for border and also border decoration, diferent width size also color, /*
+@media (max-width: 997px) {
+    .banner{
+        grid-template-columns: 1fr;
+    }
+
+    #dove{
+        width: 100%;
+    }
+
+     #bottom{
+        flex-direction: column;
+     }
+
+     .col, .interested{
+        border: none;
+     }
+}
+
