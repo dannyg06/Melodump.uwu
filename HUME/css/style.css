@@ -254,9 +254,9 @@ iframe{
 footer{
     text-align: center;
     padding: 10px;
-    background-color: rgba(2, 2, 2, 0.486);
-    margin-top: 30%;
-    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.257);
+    margin-top: 10%;
+    border-radius: 2px;
     width: auto;
 }
 
