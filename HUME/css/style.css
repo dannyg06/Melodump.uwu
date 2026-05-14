@@ -35,10 +35,8 @@ h1, h2, h3{
     
 }
 
-.col-ban{
-    img{
-        width: 50%;
-    }
+.col-ban img{
+     width: 50%;
 }
 
 
@@ -282,7 +280,6 @@ footer{
     #dove{
         width: auto;
         margin: auto;
-        padding: auto;
     }
 
      #bottom{
