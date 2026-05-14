@@ -23,6 +23,9 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+h1, h2, h3{
+    font-family: "Instrument Serif", serif;
+}
 .banner{
     margin: 2%;
     margin-top: 0.5%;
@@ -45,6 +48,10 @@ nav{
     margin: 10px;
     border-radius: 10px;
     
+}
+
+.li::before {
+    content: "|";
 }
 
 nav ul{
