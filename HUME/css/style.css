@@ -88,6 +88,12 @@ h1{
     display: none;
 }
 
+
+
+.card0 img{
+    width: 100%;
+}
+
 @keyframes spin{
     from {translate: 0;}
     to {translate: -100%;}
@@ -267,11 +273,14 @@ footer{
     }
 
     #dove{
-        width: 100%;
+        width: auto;
+        margin: auto;
+        padding: auto;
     }
 
      #bottom{
         flex-direction: column;
+        margin: auto;
      }
 
      .col, .interested{
@@ -283,6 +292,9 @@ footer{
         height: auto;
      }
 
+     .card0 {
+        width: 70%;
+     }
 
 }
 
