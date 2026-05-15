@@ -252,13 +252,16 @@ img {
     border: 2px solid rgb(0, 0, 0);
   }
 
-
+#iframe{
+    align-items: center;
+    justify-content: center;
+}
 iframe{
     justify-content: center;
     text-align: center;
-    margin: 10px 10px 10px 10px;
+    margin-left: 28%;
     padding: 10px 20px 10px 20px;
-    background-size: contain;
+    align-items: center;
 
 }
 
@@ -292,8 +295,9 @@ footer{
      }
 
      iframe{
-        width: 50%;
+        width: 70%;
         height: auto;
+        margin-left: 15%;
      }
 
      .card0 {
