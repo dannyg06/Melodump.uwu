@@ -93,9 +93,11 @@ h1{
     display: none;
 }
 
+.card-ban {
+    width: 70%;
+}
 
-
-.card0 img{
+.card-ban img{
     width: 100%;
 }
 
@@ -288,6 +290,8 @@ footer{
      #bottom{
         flex-direction: column;
         margin: auto;
+        border-left: 2px solid #000000;
+            border-right: none;
      }
 
      .col, .interested{
@@ -300,7 +304,7 @@ footer{
         margin-left: 15%;
      }
 
-     .card0 {
+     .card-ban {
         width: 70%;
      }
 
